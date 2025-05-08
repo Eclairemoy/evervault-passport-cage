@@ -1,0 +1,23 @@
+name = "passport-verify"
+uuid = "cage_331593e4f906"
+app_uuid = "app_bb62e53b9a57"
+team_uuid = "8ae4b8153b8f"
+debug = true
+dockerfile = "./Dockerfile"
+api_key_auth = false
+trx_logging = true
+disable_tls_termination = false
+
+[egress]
+enabled = true
+
+[signing]
+certPath = "./cert.pem"
+keyPath = "./key.pem"
+
+[attestation]
+HashAlgorithm = "Sha384 { ... }"
+PCR0 = "f8010b9c5aa8caa58da5197f61bf605c897ad5d0e0be04c900e5018c7aa8d53e0fd67ded0badf88cbd1a52fa300250f7"
+PCR1 = "bcdf05fefccaa8e55bf2c8d6dee9e79bbff31e34bf28a99aa19e6b29c37ee80b214a414b7607236edf26fcb78654e63f"
+PCR2 = "2ed6511483296dafc91c663aad12d3160579dd27ac3e3f4e2df3d50256dc306fb705d905e5c015dc9cb280d6b3f40d5f"
+PCR8 = "e28ce8b09f54b03b5bb316f530f657dc7f686db3a79fecbb13de528cf3b1a2e492dee82c8a630938ec64d597118edb23"
